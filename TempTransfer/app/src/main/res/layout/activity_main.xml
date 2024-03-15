@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="206dp"
+        android:layout_height="102dp"
+        android:text="@string/input_name"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.595"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/btnSent"
+        android:layout_width="142dp"
+        android:layout_height="74dp"
+        android:layout_marginStart="120dp"
+        android:onClick="button_Click"
+        android:text="@string/send"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.611" />
+
+    <EditText
+        android:id="@+id/edtTemp"
+        android:layout_width="237dp"
+        android:layout_height="86dp"
+        android:layout_marginStart="120dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:text="@string/your_name"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="203dp" />
+
+    <TextView
+        android:id="@+id/textShow"
+        android:layout_width="230dp"
+        android:layout_height="80dp"
+        android:hint="顯示結果"
+        android:text="@string/show"
+        android:textColor="@color/material_dynamic_neutral70"
+        android:textColorHint="#5BFFFFFF"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="311dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
